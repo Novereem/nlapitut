@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/contentModel.xml
+/modules.xml
+/.idea.nltutorialapi.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\School\Semester3\Projects\NieuweLaptopProject\nltutorialapi\nltutorialapi\.idea\.idea.nltutorialapi\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
