@@ -32,7 +32,7 @@ namespace nltutorialapi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<INlTutContext,NlTutContext>(options => 
+            services.AddDbContext<NlTutContext>(options => 
                 options.UseMySql(nlConnString, 
                     ServerVersion.AutoDetect(nlConnString))); 
             services.AddSwaggerGen(c =>
@@ -61,7 +61,7 @@ namespace nltutorialapi
             }
 
             using (IServiceScope scope = app.ApplicationServices.CreateScope())
-            using (var context = scope.ServiceProvider.GetService<INlTutContext>())
+            using (var context = scope.ServiceProvider.GetService<NlTutContext>())
             {
                 context.Database.EnsureCreated();
             }

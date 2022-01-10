@@ -39,59 +39,433 @@ namespace nl.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("ffb04f72-20dd-4923-a3a4-740e0926d088"),
+                            Id = new Guid("87eaed43-ce5f-4304-9ed4-be808bfffe6b"),
                             NextQuestionId = 2,
                             QuestionId = 1,
                             Text = "300-500"
                         },
                         new
                         {
-                            Id = new Guid("49466a1b-aa6a-4cca-bee0-b7bb3cc84fc0"),
+                            Id = new Guid("0eb6ecf7-7fa8-4ce1-a692-49cf13514ba9"),
                             NextQuestionId = 2,
                             QuestionId = 1,
                             Text = "500-800"
                         },
                         new
                         {
-                            Id = new Guid("c433cd38-7ae7-44e8-b903-82ccbc2dc538"),
+                            Id = new Guid("510224d1-d0aa-4685-a5ee-1ac52e4c5169"),
                             NextQuestionId = 2,
                             QuestionId = 1,
                             Text = "800-1200"
                         },
                         new
                         {
-                            Id = new Guid("26c50887-64eb-447c-bdcd-e597144fd04d"),
+                            Id = new Guid("0f430791-7750-40bf-9da4-6e1b3020623d"),
                             NextQuestionId = 2,
                             QuestionId = 1,
                             Text = "1200+"
                         },
                         new
                         {
-                            Id = new Guid("4fb3e94a-0c24-4caa-8f5c-db3c36ca5723"),
-                            NextQuestionId = 1,
+                            Id = new Guid("62bb4415-3cbd-426b-92c4-934b6e5f36c0"),
+                            NextQuestionId = 7,
                             QuestionId = 2,
                             Text = "Mail / Netflix & YouTube"
                         },
                         new
                         {
-                            Id = new Guid("4c090277-858a-49cb-84a8-447e47096a17"),
-                            NextQuestionId = 1,
+                            Id = new Guid("3af99dcb-c4a9-4184-ae46-c8950b025090"),
+                            NextQuestionId = 7,
                             QuestionId = 2,
                             Text = "Documenten bewerken"
                         },
                         new
                         {
-                            Id = new Guid("ccde1b84-09e6-4cd5-bef6-19ac088ee8be"),
-                            NextQuestionId = 1,
+                            Id = new Guid("ba61983d-c13a-4f5a-9e5a-b8742af336e9"),
+                            NextQuestionId = 3,
                             QuestionId = 2,
-                            Text = "Foto's/videdo's bewerken"
+                            Text = "Foto's/video's bewerken"
                         },
                         new
                         {
-                            Id = new Guid("a6c8731f-f2ca-45a2-9f0b-c0a18628488b"),
-                            NextQuestionId = 1,
+                            Id = new Guid("55060494-3330-47c2-8b4a-d1f1cc054bbc"),
+                            NextQuestionId = 4,
                             QuestionId = 2,
                             Text = "Gamen"
+                        },
+                        new
+                        {
+                            Id = new Guid("5a40cd64-6d40-4bb1-8c64-71ac17a90b4f"),
+                            NextQuestionId = 6,
+                            QuestionId = 3,
+                            Text = "Foto's"
+                        },
+                        new
+                        {
+                            Id = new Guid("337ae19b-4473-4eb5-99e1-712f93a77e10"),
+                            NextQuestionId = 6,
+                            QuestionId = 3,
+                            Text = "Video's"
+                        },
+                        new
+                        {
+                            Id = new Guid("abc5eb7c-b396-4188-9fa7-dfc4d97b0ecf"),
+                            NextQuestionId = 5,
+                            QuestionId = 4,
+                            Text = "Shooters"
+                        },
+                        new
+                        {
+                            Id = new Guid("5500b988-5c6f-4562-9fe5-ffc278a83c1e"),
+                            NextQuestionId = 5,
+                            QuestionId = 4,
+                            Text = "Moba"
+                        },
+                        new
+                        {
+                            Id = new Guid("7b2d0282-972c-4bb6-a2e5-0416905b3640"),
+                            NextQuestionId = 5,
+                            QuestionId = 4,
+                            Text = "Action-adventure"
+                        },
+                        new
+                        {
+                            Id = new Guid("2d7c6812-b280-4703-8bda-6d505d3163bf"),
+                            NextQuestionId = 5,
+                            QuestionId = 4,
+                            Text = "Esports"
+                        },
+                        new
+                        {
+                            Id = new Guid("b9212982-2003-4f86-b951-2086b5b0d70d"),
+                            NextQuestionId = 5,
+                            QuestionId = 4,
+                            Text = "Real-time strategy"
+                        },
+                        new
+                        {
+                            Id = new Guid("65c23657-4df5-439b-9b94-812d712773c9"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Counter-Strike: Global Offensive"
+                        },
+                        new
+                        {
+                            Id = new Guid("0f58fa1c-1c22-4f8a-a1f4-0942b10d7cbd"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "New World"
+                        },
+                        new
+                        {
+                            Id = new Guid("d2d9a848-510d-4e50-93e2-e29cdfab2e7f"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Dota 2"
+                        },
+                        new
+                        {
+                            Id = new Guid("2d5cad18-d852-4ee5-9c67-cdcdb853a279"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Battlefield 2042"
+                        },
+                        new
+                        {
+                            Id = new Guid("a89f99c4-8461-40f2-b628-499b7bdd9174"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Rocket League"
+                        },
+                        new
+                        {
+                            Id = new Guid("3a9fb635-cf8b-46cc-aff8-afd808f1c199"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Apex Legends"
+                        },
+                        new
+                        {
+                            Id = new Guid("ee9c2203-9600-4be8-a07c-a34b4ad331ab"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Phasmophobia"
+                        },
+                        new
+                        {
+                            Id = new Guid("52643864-6eee-4dac-9669-c564ece8e346"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Dead by Daylight"
+                        },
+                        new
+                        {
+                            Id = new Guid("ff7b7fe0-740b-4931-8779-094524f8239a"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Tom Clancy's Rainbow Six: Siege"
+                        },
+                        new
+                        {
+                            Id = new Guid("edd532fe-28b4-4752-bb5a-550e877d7329"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Team Fortress 2"
+                        },
+                        new
+                        {
+                            Id = new Guid("bb099b2f-f26d-4c17-9429-12e73f18653f"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Rust"
+                        },
+                        new
+                        {
+                            Id = new Guid("fe0c4eea-e3e5-47bc-b115-009398d54cdc"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Destiny 2"
+                        },
+                        new
+                        {
+                            Id = new Guid("64ba5c1d-1853-4b48-afcf-9bf63d140d8a"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "PLAYERUNKNOWN'S BATTLEGROUNDS"
+                        },
+                        new
+                        {
+                            Id = new Guid("04fca485-aeb5-4e9b-b251-6d942690938e"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Garry's Mod"
+                        },
+                        new
+                        {
+                            Id = new Guid("73d283d6-d71f-4e9e-a051-1bd81ecab2ed"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Left 4 Dead 2"
+                        },
+                        new
+                        {
+                            Id = new Guid("2f778f39-a619-4598-aead-9b19a8377373"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Bloons TD 6"
+                        },
+                        new
+                        {
+                            Id = new Guid("17bd92c7-6b21-412e-9fbb-cf2f2a23dbad"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Brawlhalla"
+                        },
+                        new
+                        {
+                            Id = new Guid("c50378ae-7fe5-40d1-a569-26216bb936ff"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Euro Truck Simulator 2"
+                        },
+                        new
+                        {
+                            Id = new Guid("5e06db60-8f01-4e1f-ab18-ad925ca269ed"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Among Us"
+                        },
+                        new
+                        {
+                            Id = new Guid("cccd3a90-facd-4507-895a-cd6f6c2e8b71"),
+                            NextQuestionId = 8,
+                            QuestionId = 5,
+                            Text = "Grand Theft Auto 5"
+                        },
+                        new
+                        {
+                            Id = new Guid("36060b9c-22fd-4c38-8718-83289daddf6d"),
+                            NextQuestionId = 7,
+                            QuestionId = 6,
+                            Text = "Ja"
+                        },
+                        new
+                        {
+                            Id = new Guid("4b56bf71-a027-4320-9555-2b0f21742ae1"),
+                            NextQuestionId = 7,
+                            QuestionId = 6,
+                            Text = "Nee"
+                        },
+                        new
+                        {
+                            Id = new Guid("5985bdad-10c4-4789-abf2-03d4ff95123a"),
+                            NextQuestionId = 8,
+                            QuestionId = 7,
+                            Text = "Ja"
+                        },
+                        new
+                        {
+                            Id = new Guid("279e4bbe-cc8f-441d-9ba4-0f66412ae919"),
+                            NextQuestionId = 8,
+                            QuestionId = 7,
+                            Text = "Nee"
+                        },
+                        new
+                        {
+                            Id = new Guid("51058636-15e2-40df-a7b1-6d6cb9aecfcc"),
+                            NextQuestionId = 9,
+                            QuestionId = 8,
+                            Text = "FPS"
+                        },
+                        new
+                        {
+                            Id = new Guid("1dcb4f82-f3ce-4b40-a682-1f35a5b52353"),
+                            NextQuestionId = 9,
+                            QuestionId = 8,
+                            Text = "Graphics"
+                        },
+                        new
+                        {
+                            Id = new Guid("2866db74-3207-497b-bbc5-9630ca76eec5"),
+                            NextQuestionId = 1,
+                            QuestionId = 9,
+                            Text = "13'"
+                        },
+                        new
+                        {
+                            Id = new Guid("b6a427e0-cfeb-43b9-be51-09c96bdb6e23"),
+                            NextQuestionId = 1,
+                            QuestionId = 9,
+                            Text = "14'"
+                        },
+                        new
+                        {
+                            Id = new Guid("72e4d591-974d-4e3e-b853-51e1ac222a2b"),
+                            NextQuestionId = 1,
+                            QuestionId = 9,
+                            Text = "15'6"
+                        },
+                        new
+                        {
+                            Id = new Guid("be241db4-fb37-4415-a1bc-7cf3f3a79304"),
+                            NextQuestionId = 1,
+                            QuestionId = 9,
+                            Text = "17'"
+                        });
+                });
+
+            modelBuilder.Entity("nl.Commen.Models.Laptop", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Price")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Usage")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Laptops");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("caa22ac6-64f0-4566-b3eb-2231594ac0b0"),
+                            Price = "300",
+                            Usage = "Mail"
+                        },
+                        new
+                        {
+                            Id = new Guid("42411e12-33f9-4d81-b5d0-3f0ec04dab62"),
+                            Price = "500",
+                            Usage = "Mail"
+                        },
+                        new
+                        {
+                            Id = new Guid("b123211e-748e-47f2-947e-3623972c8d48"),
+                            Price = "800",
+                            Usage = "Mail"
+                        },
+                        new
+                        {
+                            Id = new Guid("f81e88e8-53a8-4333-acb6-ffef1902eaa5"),
+                            Price = "1200",
+                            Usage = "Mail"
+                        },
+                        new
+                        {
+                            Id = new Guid("c060d254-3f50-4d2f-a410-85691ee2d5fd"),
+                            Price = "300",
+                            Usage = "Documenten bewerken"
+                        },
+                        new
+                        {
+                            Id = new Guid("8243da56-bf4a-45ab-b71c-427221d33507"),
+                            Price = "500",
+                            Usage = "Documenten bewerken"
+                        },
+                        new
+                        {
+                            Id = new Guid("0e694d7c-7d03-415c-b762-d77b9fb00c03"),
+                            Price = "800",
+                            Usage = "Documenten bewerken"
+                        },
+                        new
+                        {
+                            Id = new Guid("5678fe65-2460-4294-975b-8b0db11cf081"),
+                            Price = "1200",
+                            Usage = "Documenten bewerken"
+                        },
+                        new
+                        {
+                            Id = new Guid("e7bf6f7a-a099-4349-abad-f8bed0989661"),
+                            Price = "300",
+                            Usage = "Foto's/videdo's bewerken"
+                        },
+                        new
+                        {
+                            Id = new Guid("7b073160-224f-4605-b603-c1adfb501121"),
+                            Price = "500",
+                            Usage = "Foto's/videdo's bewerken"
+                        },
+                        new
+                        {
+                            Id = new Guid("575ec629-c1e8-4c10-b161-731d23a178e9"),
+                            Price = "800",
+                            Usage = "Foto's/videdo's bewerken"
+                        },
+                        new
+                        {
+                            Id = new Guid("9f958947-cfde-48fc-ba2f-a6fc55f501ad"),
+                            Price = "1200",
+                            Usage = "Foto's/videdo's bewerken"
+                        },
+                        new
+                        {
+                            Id = new Guid("c44e3725-bc54-4c28-bb3d-757183205d72"),
+                            Price = "300",
+                            Usage = "Gamen"
+                        },
+                        new
+                        {
+                            Id = new Guid("09583b13-3f6f-482e-a407-d017a23bad99"),
+                            Price = "500",
+                            Usage = "Gamen"
+                        },
+                        new
+                        {
+                            Id = new Guid("c8ae8a6b-a09a-44e3-affe-8678f58c6818"),
+                            Price = "800",
+                            Usage = "Gamen"
+                        },
+                        new
+                        {
+                            Id = new Guid("73aded0f-ef92-460a-8f31-e2317eefa766"),
+                            Price = "1200",
+                            Usage = "Gamen"
                         });
                 });
 
@@ -117,8 +491,108 @@ namespace nl.Data.Migrations
                         new
                         {
                             Id = 2,
-                            Text = "Waar ga je je laptop voor gebruiken"
+                            Text = "Waar ga je je laptop voor gebruiken?"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Text = "Is het vooral video of foto bewerking?"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Text = "Wat voor soort games speelt u?"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Text = "Welke van de onderstaande games heeft u gespeeld of bent u van plan te spelen?"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Text = "Doet u het professioneel?"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Text = "Heeft u vaak veel programma's tegelijkertijd aanstaan? (4 of meer)"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Text = "Heeft U liever meer FPS, en/of betere graphics"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Text = "Welk grootte scherm heeft u het liefst"
                         });
+                });
+
+            modelBuilder.Entity("nl.Commen.Models.SingleAnswer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("AnswerId")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Token")
+                        .HasColumnType("longtext");
+
+                    b.Property<Guid?>("UserAnswerId")
+                        .HasColumnType("char(36)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserAnswerId");
+
+                    b.ToTable("SingeAnswers");
+                });
+
+            modelBuilder.Entity("nl.Commen.Models.SingleAnswerTemp", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("AnswerId")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Token")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SingleAnswerTemp");
+                });
+
+            modelBuilder.Entity("nl.Commen.Models.UserAnswer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Token")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UserAnswers");
+                });
+
+            modelBuilder.Entity("nl.Commen.Models.SingleAnswer", b =>
+                {
+                    b.HasOne("nl.Commen.Models.UserAnswer", null)
+                        .WithMany("Answers")
+                        .HasForeignKey("UserAnswerId");
+                });
+
+            modelBuilder.Entity("nl.Commen.Models.UserAnswer", b =>
+                {
+                    b.Navigation("Answers");
                 });
 #pragma warning restore 612, 618
         }
