@@ -13,6 +13,6 @@ namespace nl.Commen.Interfaces
         List<Answer> GetAnswers(int id);
         void RemovePreExistingUserAnswers(string token);
         //void SaveAnswer(string token, string answer);
-        List<SingleAnswerTemp> GetUserAnswers(string token);
+        List<SingleAnswerTemp> GetUserAnswersTemps(string token);
     }
 }

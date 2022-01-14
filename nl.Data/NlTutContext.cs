@@ -20,6 +20,7 @@ namespace nl.Data
         public DbSet<SingleAnswer> SingeAnswers { get; set; }
         public DbSet<SingleAnswerTemp> SingleAnswerTemp { get; set; }
         public DbSet<Question> Question { get; set; }
+        public DbSet<Component> Components { get; set; }
         public DbSet<Laptop> Laptops { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -38,67 +39,67 @@ namespace nl.Data
 
             modelBuilder.Entity<Answer>().HasData(
                 //1
-                new Answer(1, 2, "300-500"), 
-                new Answer(1, 2, "500-800"),
-                new Answer(1,2,"800-1200"),
-                new Answer(1,2,"1200+"),
+                new Answer(2, 1, "300-500", 1), 
+                new Answer(2, 2,"500-800", 1),
+                new Answer(2,3,"800-1200", 1),
+                new Answer(2,4,"1200+", 1),
                 
                 //2
-                new Answer(2, 7, "Mail / Netflix & YouTube"), 
-                new Answer(2, 7, "Documenten bewerken"),
-                new Answer(2,3,"Foto's/video's bewerken"),
-                new Answer(2,4,"Gamen"),
+                new Answer(7, 1,"Mail / Netflix & YouTube", 2), 
+                new Answer(7, 2,"Documenten bewerken", 2),
+                new Answer(3,3,"Foto's/video's bewerken", 2),
+                new Answer(4,4,"Gamen", 2),
                 
                 //3
-                new Answer(3, 6, "Foto's"),
-                new Answer(3, 6, "Video's"),
+                new Answer(6, 1,"Foto's", 3),
+                new Answer(6, 2,"Video's", 3),
                 
                 //4
-                new Answer(4,5,"Shooters"),
-                new Answer(4,5,"Moba"),
-                new Answer(4,5,"Action-adventure"),
-                new Answer(4,5,"Esports"),
-                new Answer(4,5,"Real-time strategy"),
+                new Answer(5,1,"Shooters", 4),
+                new Answer(5,2,"Moba", 4),
+                new Answer(5,3,"Action-adventure", 4),
+                new Answer(5,4,"Esports", 4),
+                new Answer(5,5,"Real-time strategy", 4),
                 
                 //5
-                new Answer(5,8,"Counter-Strike: Global Offensive"),
-                new Answer(5,8,"New World"),
-                new Answer(5,8,"Dota 2"),
-                new Answer(5,8,"Battlefield 2042"),
-                new Answer(5,8,"Rocket League"),
-                new Answer(5,8,"Apex Legends"),
-                new Answer(5,8,"Phasmophobia"),
-                new Answer(5,8,"Dead by Daylight"),
-                new Answer(5,8,"Tom Clancy's Rainbow Six: Siege"),
-                new Answer(5,8,"Team Fortress 2"),
-                new Answer(5,8,"Rust"),
-                new Answer(5,8,"Destiny 2"),
-                new Answer(5,8,"PLAYERUNKNOWN'S BATTLEGROUNDS"),
-                new Answer(5,8,"Garry's Mod"),
-                new Answer(5,8,"Left 4 Dead 2"),
-                new Answer(5,8,"Bloons TD 6"),
-                new Answer(5,8,"Brawlhalla"),
-                new Answer(5,8,"Euro Truck Simulator 2"),
-                new Answer(5,8,"Among Us"),
-                new Answer(5,8,"Grand Theft Auto 5"),
+                new Answer(8,1,"Counter-Strike: Global Offensive", 5),
+                new Answer(8,2,"New World", 5),
+                new Answer(8,3,"Dota 2", 5),
+                new Answer(8,4,"Battlefield 2042", 5),
+                new Answer(8,5,"Rocket League", 5),
+                new Answer(8,6,"Apex Legends", 5),
+                new Answer(8,7,"Phasmophobia", 5),
+                new Answer(8,8,"Dead by Daylight", 5),
+                new Answer(8,9,"Tom Clancy's Rainbow Six: Siege", 5),
+                new Answer(8,10,"Team Fortress 2", 5),
+                new Answer(8,11,"Rust", 5),
+                new Answer(8,12,"Destiny 2", 5),
+                new Answer(8,13,"PLAYERUNKNOWN'S BATTLEGROUNDS", 5),
+                new Answer(8,14,"Garry's Mod", 5),
+                new Answer(8,15,"Left 4 Dead 2", 5),
+                new Answer(8,16,"Bloons TD 6", 5),
+                new Answer(8,17,"Brawlhalla", 5),
+                new Answer(8,18,"Euro Truck Simulator 2", 5),
+                new Answer(8,19,"Among Us", 5),
+                new Answer(8,20,"Grand Theft Auto 5", 5),
                 
                 //6
-                new Answer(6,7,"Ja"),
-                new Answer(6,7,"Nee"),
+                new Answer(7,1,"Ja", 6),
+                new Answer(7,2,"Nee", 6),
                 
                 //7
-                new Answer(7,8,"Ja"),
-                new Answer(7,8,"Nee"),
+                new Answer(9,1,"Ja", 7),
+                new Answer(9,2,"Nee", 7),
                 
                 //8
-                new Answer(8,9,"FPS"),
-                new Answer(8,9,"Graphics"),
+                new Answer(9,1,"FPS", 8),
+                new Answer(9,2,"Graphics", 8),
                 
                 //9
-                new Answer(9, 1, "13'"),
-                new Answer(9, 1, "14'"),
-                new Answer(9, 1, "15'6"),
-                new Answer(9, 1, "17'")
+                new Answer(1, 1,"13'", 9),
+                new Answer(1, 2,"14'", 9),
+                new Answer(1, 3,"15'6", 9),
+                new Answer(1, 4,"17'", 9)
                 );
             
             modelBuilder.Entity<Laptop>().HasData(
@@ -118,6 +119,35 @@ namespace nl.Data
                 new Laptop("500","Gamen"),
                 new Laptop("800","Gamen"),
                 new Laptop("1200","Gamen")
+            );
+
+            modelBuilder.Entity<Component>().HasData(
+                //Processor
+                new Component("3", ComponentTypes.Processor.ToString(), 3),
+                new Component("5", ComponentTypes.Processor.ToString(), 6),
+                new Component("7", ComponentTypes.Processor.ToString(), 9),
+                
+                //Storage
+                new Component("256gb", ComponentTypes.Storage.ToString(), 3),
+                new Component("512gb", ComponentTypes.Storage.ToString(), 6),
+                new Component("1tb", ComponentTypes.Storage.ToString(), 9),
+                
+                //Ram
+                new Component("8gb", ComponentTypes.Ram.ToString(), 3),
+                new Component("16gb", ComponentTypes.Ram.ToString(), 6),
+                new Component("32gb", ComponentTypes.Ram.ToString(), 9),
+                
+                //GraphicsCard
+                new Component("geen", ComponentTypes.GraphicsCard.ToString(), 1),
+                new Component("1650-1660", ComponentTypes.GraphicsCard.ToString(), 3),
+                new Component("2060/3050-2070/3060", ComponentTypes.GraphicsCard.ToString(), 5),
+                new Component("2070/3070-2080ti/3090", ComponentTypes.GraphicsCard.ToString(), 8),
+                
+                //Screensize
+                new Component("13'", ComponentTypes.ScreenSize.ToString(), 1),
+                new Component("14'", ComponentTypes.ScreenSize.ToString(), 2),
+                new Component("15'6", ComponentTypes.ScreenSize.ToString(), 3),
+                new Component("17'", ComponentTypes.ScreenSize.ToString(), 4)
             );
         }
         

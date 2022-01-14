@@ -13,9 +13,11 @@ namespace nltutorialapi.Controllers
     public class QuestionsController : Controller
     {
         private readonly QuestionService _questionService;
+        private readonly AnswerService _answerService;
 
         public QuestionsController(NlTutContext context)
         {
+            _answerService = new AnswerService(new AnswerData(context));
             _questionService = new QuestionService(new QuestionData(context));
         }
 
@@ -28,6 +30,12 @@ namespace nltutorialapi.Controllers
         public object AnswerQuestion(ApiAnswer apiAnswer)
         {
             return _questionService.GetNextQuestion(apiAnswer.AnswerId, apiAnswer.Token);
+        }
+
+        [HttpGet("/tutorial/results/{token}")]
+        public object GetResults(string token)
+        {
+            return _answerService.GetResults(token);
         }
     }
 }

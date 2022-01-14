@@ -9,7 +9,6 @@ namespace nl.Logic
     public class QuestionService
     {
         private readonly IQuestionData _questionData;
-        private readonly AnswerService _answerService;
 
         public QuestionService(IQuestionData questionData)
         {
@@ -28,7 +27,7 @@ namespace nl.Logic
             return new ApiQuestion(question.Id, question.Text, answers);
         }
 
-        public object GetNextQuestion(string answerId, string token)
+        public ApiQuestion GetNextQuestion(string answerId, string token)
         {
             //Save the answer with the user's token
             _questionData.SaveSingleAnswer(token, answerId);
@@ -38,9 +37,9 @@ namespace nl.Logic
             if (answer.QuestionId == 9)
             {
                 //Results results = new Results(token, SingleToUserAnswerList(_questionData.GetUserAnswers(token)));
-                UserAnswer userAnswer = new UserAnswer(token, SingleToUserAnswerList(_questionData.GetUserAnswers(token)));
+                UserAnswer userAnswer = new UserAnswer(token, SingleToUserAnswerList(_questionData.GetUserAnswersTemps(token)));
                 _questionData.SaveUserAnswers(userAnswer);
-                return default;
+                return new ApiQuestion();
             }
             else
             {
@@ -54,6 +53,8 @@ namespace nl.Logic
                 return new ApiQuestion(question.Id, question.Text, answers);
             }
         }
+
+        
 
         private List<SingleAnswer> SingleToUserAnswerList(List<SingleAnswerTemp> singleAnswerTemps)
         {

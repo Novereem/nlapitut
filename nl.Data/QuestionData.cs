@@ -22,7 +22,7 @@ namespace nl.Data
             _context.SaveChanges();
         }
         
-        public List<SingleAnswerTemp> GetUserAnswers(string token)
+        public List<SingleAnswerTemp> GetUserAnswersTemps(string token)
         {
             List<SingleAnswerTemp> singleAnswerTemps = _context.SingleAnswerTemp.Where(a => a.Token == token).ToList();
             return singleAnswerTemps;

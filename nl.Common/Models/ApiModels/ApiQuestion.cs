@@ -8,6 +8,10 @@ namespace nl.Commen.Models.ApiModels
         public string Text { get; set; }
         public List<Answer> Answers {get; set; }
 
+        public ApiQuestion()
+        {
+            
+        }
         
         public ApiQuestion(int id, string text, List<Answer> answers)
         {

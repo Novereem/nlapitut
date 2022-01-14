@@ -1,0 +1,19 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=21c589a3_002D92dc_002D4db9_002D93e9_002Dd295043bca7e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestGetClosestComponent_True #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4554837B-C070-4C13-AB14-8D1A776DEB4A::net5.0::nl.Tests.UnitTests.AnswerServiceTests.TestGetClosestComponent_True&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4554837B-C070-4C13-AB14-8D1A776DEB4A::net5.0::nl.Tests.UnitTests.AnswerServiceTests.TestGetClosestComponent_False&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4554837B-C070-4C13-AB14-8D1A776DEB4A::net5.0::nl.Tests.UnitTests.AnswerServiceTests.TestGetProcessors_True&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4554837B-C070-4C13-AB14-8D1A776DEB4A::net5.0::nl.Tests.UnitTests.AnswerServiceTests.TestGetProcessors_False&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4554837B-C070-4C13-AB14-8D1A776DEB4A::net5.0::nl.Tests.UnitTests.QuestionServiceTests.TestGetFirstQuestion_TwoTokens_True&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4554837B-C070-4C13-AB14-8D1A776DEB4A::net5.0::nl.Tests.UnitTests.QuestionServiceTests.TestGetFirstQuestion_True&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4554837B-C070-4C13-AB14-8D1A776DEB4A::net5.0::nl.Tests.UnitTests.QuestionServiceTests.TestGetNextQuestion_True&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4554837B-C070-4C13-AB14-8D1A776DEB4A::net5.0::nl.Tests.UnitTests.QuestionServiceTests.TestGetFirstQuestion_False&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4554837B-C070-4C13-AB14-8D1A776DEB4A::net5.0::nl.Tests.UnitTests.QuestionServiceTests.TestGetNextQuestion_False&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5cc9ce3c_002D760b_002D47ac_002D9cf5_002D9bd7526b79f6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestGetClosestComponent_True" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4554837B-C070-4C13-AB14-8D1A776DEB4A::net5.0::nl.Tests.UnitTests.AnswerServiceTests.TestGetClosestComponent_True&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
